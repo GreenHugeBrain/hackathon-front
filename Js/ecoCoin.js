@@ -143,7 +143,7 @@ redeemButton.addEventListener('click', (e) => {
 function sendRedemptionRequest(points) {
     const token = localStorage.getItem('jwt_token');  
 
-    fetch('http://127.0.0.1:5000/api/redeem', {
+    fetch('https://hackathon-backend-arpw.onrender.com/api/redeem', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
