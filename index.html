@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ka">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>მთავარი გვერდი</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header class="container-fluid bg-dark text-white py-3">
+        <nav class="navbar navbar-expand-lg navbar-dark rounded">
+            <div class="container">
+                <a class="navbar-brand" href="#">ეკოRECILE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">მთავარი</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="eco_coin_generation.html">ქოინების გამომუშავება</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">ღონისძიებები</a>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero bg-light text-center text-dark py-5">
+            <div class="container">
+                <h1 class="display-4 fw-bold">მოგესალმებით ეკოRECILE-ზე</h1>
+                <p class="lead">შემოუერთდით სუფთა და მწვანე მომავლის შექმნას.</p>
+                <a href="register.html" class="btn btn-primary btn-lg">დაიწყე ახლავე</a>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits py-5 bg-white text-center">
+            <div class="container">
+                <h2 class="fw-bold mb-4">რატომ ჩვენ?</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <i class="bi bi-tree text-success display-4"></i>
+                        <h4 class="mt-3">ეკოლოგიური</h4>
+                        <p>ნაგავსაყრელების შემცირება და გარემოს დაცვა.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="bi bi-people text-primary display-4"></i>
+                        <h4 class="mt-3">საზოგადოებრივი სარგებელი</h4>
+                        <p>სუფთა სამეზობლო ჯანმრთელი ცხოვრებისათვის.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="bi bi-gift text-warning display-4"></i>
+                        <h4 class="mt-3">საჩუქრები</h4>
+                        <p>დააგროვე ქულები და მიიღე ჯილდოები გადამუშავებისთვის.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="calculators row">
+            <!-- Interactive Calculator Section -->
+            <section class="calculator py-5 bg-light text-center col">
+                <div class="container">
+                    <h2 class="fw-bold mb-4">ინტერაქტიული კალკულატორი</h2>
+                    <p class="mb-4">შეიყვანეთ გადამუშავებული ნარჩენების რაოდენობა და გაიგეთ, რამდენი რესურსი დაზოგეთ!
+                    </p>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <form id="calculator-form">
+                                <div class="mb-3">
+                                    <label for="plastic" class="form-label">პლასტიკი (კგ):</label>
+                                    <input type="number" class="form-control" id="plastic"
+                                        placeholder="შეიყვანეთ რაოდენობა" min="0" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="paper" class="form-label">ქაღალდი (კგ):</label>
+                                    <input type="number" class="form-control" id="paper"
+                                        placeholder="შეიყვანეთ რაოდენობა" min="0" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="glass" class="form-label">მინა (კგ):</label>
+                                    <input type="number" class="form-control" id="glass"
+                                        placeholder="შეიყვანეთ რაოდენობა" min="0" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">გამოთვლა</button>
+                            </form>
+                            <div id="results" class="mt-4 text-success fw-bold" style="display:none;"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Civil Initiatives Section -->
+        <section class="civil-initiatives py-5 bg-light text-center">
+            <div class="container">
+                <h2 class="fw-bold mb-4">ჩაერთე ეკო-ღონისძიებებში</h2>
+                <p>შეიძლება დაურთო ადგილობრივ ეკო-ღონისძიებებს, როგორიცაა დასუფთავების აქციები და ხეების დარგვა.</p>
+
+                <div class="row">
+                    <!-- Event Schedule -->
+                    <div class="col-md-4">
+                        <h4 class="mt-3">განრიგი</h4>
+                        <p>წინასწარი განრიგი დაეხმარება შენს აქტიურობას და დაგეხმარება ღონისძიებების ჩასატარებლად.</p>
+                    </div>
+
+                    <!-- Event Map -->
+                    <div class="col-md-4">
+                        <h4 class="mt-3">ღონისძიებების რუკა</h4>
+                        <p>ეს რუკა დაგეხმარება იპოვო ადგილობრივი ღონისძიებები და გაჩვენებს მათ მდებარეობას.</p>
+                    </div>
+
+                    <!-- Volunteer Ratings -->
+                    <div class="col-md-4">
+                        <h4 class="mt-3">მოხალისეების რეიტინგი</h4>
+                        <p>შეაფასეთ თქვენი გამოცდილება და გაუზიარეთ თქვენი აზრები სხვებს.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="video-section">
+            <div class="container">
+                <div class="content">
+                    <h2>როგორ ვმუშაობთ</h2>
+                    <p>გაეცანით ჩვენს პროცესს და შეიტყვეთ მეტი ნარჩენების გადამუშავების შესახებ</p>
+                </div>
+                <div class="video-container">
+                    <!-- თქვენი YouTube ვიდეოს ембед კოდი -->
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="გადამუშავების პროცესი"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Gallery Section -->
+        <section class="gallery-section">
+            <div class="container">
+                <h2 class="text-center mb-5">ჩვენი პროექტები</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://img.marketer.ge/2024/10/image-758x398.png" alt="გადამუშავების პროექტი 1">
+                        <div class="overlay">
+                            <h3>პლასტიკის გადამუშავება</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://mastsavlebeli.ge/wp-content/uploads/2023/04/%E1%83%94%E1%83%99%E1%83%9D.png" alt="გადამუშავების პროექტი 2">
+                        <div class="overlay">
+                            <h3>ქაღალდის გადამუშავება</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://img.marketer.ge/2019/06/home-recycling-hero.jpg" alt="გადამუშავების პროექტი 3">
+                        <div class="overlay">
+                            <h3>მინის გადამუშავება</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://www.rlabel.org/images/elektronikte-(e-atik)-geri-donusum.jpg" alt="გადამუშავების პროექტი 4">
+                        <div class="overlay">
+                            <h3>ელექტრონული ნარჩენები</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="statistics bg-dark text-white py-5">
+            <div class="container text-center">
+                <h2 class="fw-bold mb-4">ჩვენი შედეგები</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3 class="display-4 fw-bold">50K+</h3>
+                        <p>გადამუშავებული ტონა</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="display-4 fw-bold">10K+</h3>
+                        <p>კმაყოფილი მომხმარებელი</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="display-4 fw-bold">5K+</h3>
+                        <p>გაცემული ჯილდოები</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="display-4 fw-bold">30%</h3>
+                        <p>ნაგავსაყრელების შემცირება</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 ეკოRecycle. ყველა უფლება დაცულია.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="Js/main.js"></script>
+    <script src="Js/check_user.js"></script>
+</body>
+
+</html>
