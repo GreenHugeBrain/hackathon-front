@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "login.html"; 
     }
 
-    fetch("http://127.0.0.1:5000/api/profile", {
+    fetch("https://hackathon-backend-arpw.onrender.com/api/profile", {
         method: "GET",
         headers: {
             "Authorization": `Bearer ${token}`,
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function fetchEcoCoins() {
     const token = localStorage.getItem('jwt_token'); 
 
-    fetch('http://127.0.0.1:5000/api/ecocoins/all', {
+    fetch('https://hackathon-backend-arpw.onrender.com/api/ecocoins/all', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
